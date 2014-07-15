@@ -1,0 +1,27 @@
+body{
+
+	 background: url(img/wood.jpg) no-repeat center center fixed
+}
+
+
+legend{
+	text-align:center;
+}
+
+#center{
+	text-align:center;
+}
+#todoList {
+	margin: 0 auto;
+	width:20em;
+	height:20em;
+	text-align: left;
+	background-color:rgb(254, 239, 160);
+	border-bottom: blue;
+	overflow:scroll;
+	font-family: 'Shadows Into Light', cursive;
+        font-size: 20px;
+}
+
+
+177 129 69
