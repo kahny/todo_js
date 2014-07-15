@@ -18,15 +18,16 @@ todoForm.onsubmit = function(){
 	var newRemoveButton = document.createElement('button') //adds a remove button 
 
 	newRemoveButton.innerHTML="x"
+
 	todoList.appendChild(newListBullet);
-	todoList.appendChild(newTextNode);
-	todoList.appendChild(newRemoveButton);
+	newListBullet.appendChild(newTextNode);
+	newListBullet.appendChild(newRemoveButton);
 
 	todoInput.value = ""  //this clears out the input field 
 
 	newRemoveButton.onclick= function(){
-		todoList.removeChild(newRemoveButton);
-		todoList.removeChild(newTextNode);
+		newListBullet.removeChild(newRemoveButton);
+		newListBullet.removeChild(newTextNode);
 		todoList.removeChild(newListBullet)
 	}
 }
